@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> Javascript : 2048 puzzle</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+ <body>
+ 	<div id="NGame" onclick="Reload()" ><a>New game</a></div>
+ 	<div id="AI_BOX" ><a>AI box</a>
+ 	<div id="AI_Arrow">
+ 		<img src="Move.png" height="40" width="40" id="Move">
+ 		<a id="a_tag">You should move up</a>
+ 	</div>
+ 	</div>
+	<div id="canvas"></div>	
+	<h2>Score : <div style="display:inline;" id="score"></div></h2>
+	<button class="buttonn" id="AI_Help" onclick="AI_Fun();" onkeydown="AI_Fun()" onkeyup="AI_Fun()">AI Help</button>
+	<input class="buttonn" type="button" name="" onclick="AI_AutoPlay()" id="AutoPlay" value="AI Auto Play"></input>
+	<button class="buttonn" id="Close" onclick="AI_Close();">Close</button>
+	<button class="buttonn" id="Pause" onclick="Pause()">Pause</button>
+	<div id="Over">
+		Game over
+	</div>
+<div id="Goal" style="position: absolute; margin-top: -290px; margin-left: 470px; box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 1.0); border-radius: 10px; text-align: center;">
+	<h3>Trạng thái đích</h3>
+	<input type="text" name="" style=" " id="AP12" value="0"></input>
+	<input type="text" name="" style=" " id="AP13" value="0"></input>
+	<input type="text" name="" style=" " id="AP14" value="0"></input>
+	<input type="text" name="" style=" " id="AP15" value="0"></input><br>
+	<input type="text" name="" style=" " id="AP8" value="0"></input>
+	<input type="text" name="" style=" " id="AP9" value="0"></input>
+	<input type="text" name="" style=" " id="AP10" value="0"></input>
+	<input type="text" name="" style=" " id="AP11" value="0"></input><br>
+	<input type="text" name="" style=" " id="AP7" value="0"></input>
+	<input type="text" name="" style=" " id="AP6" value="0"></input>
+	<input type="text" name="" style=" " id="AP5" value="0"></input>
+	<input type="text" name="" style=" " id="AP4" value="0"></input><br>
+	<input type="text" name="" style=" " id="AP0" value="4"></input>
+	<input type="text" name="" style=" " id="AP1" value="2"></input>
+	<input type="text" name="" style=" " id="AP2" value="0"></input>
+	<input type="text" name="" style=" " id="AP3" value="0"></input>
+</div>
+<div id="Des" style="margin-top: -280px; height: 260px; width: 140px; background-color: lightgray; padding: 2px; display: none;">
+	<div class="Title" style="font-family: cursive; font-size: 13px;">Estimate after moving</div>
+	<input type="text" name="" style=" width: 15px;" id="IP0" value="1"></input>
+	<input type="text" name="" style=" width: 15px;" id="IP1" value="1"></input>
+	<input type="text" name="" style=" width: 15px;" id="IP2" value="1"></input>
+	<input type="text" name="" style=" width: 15px;" id="IP3" value="1"></input><br>
+	<input type="text" name="" style=" width: 15px;" id="IP4" value="1"></input>
+	<input type="text" name="" style=" width: 15px;" id="IP5" value="1"></input>
+	<input type="text" name="" style=" width: 15px;" id="IP6" value="1"></input>
+	<input type="text" name="" style=" width: 15px;" id="IP7" value="1"></input><br>
+	<input type="text" name="" style=" width: 15px;" id="IP8" value="1"></input>
+	<input type="text" name="" style=" width: 15px;" id="IP9" value="1"></input>
+	<input type="text" name="" style=" width: 15px;" id="IP10" value="1"></input>
+	<input type="text" name="" style=" width: 15px;" id="IP11" value="1"></input><br>
+	<input type="text" name="" style=" width: 15px;" id="IP12" value="1"></input>
+	<input type="text" name="" style=" width: 15px;" id="IP13" value="1"></input>
+	<input type="text" name="" style=" width: 15px;" id="IP14" value="1"></input>
+	<input type="text" name="" style=" width: 15px;" id="IP15" value="1"></input>
+	<br>
+	<div id="percent">
+		Điểm ưu tiên:
+		<div id="left" class="c1">
+			<div class="icon">Up &ensp;&ensp; <i class="fas fa-arrow-up"></i></div>
+			<div class="Per"> <input id="point0" type="text" name=""style="height: 3px; width: 40px;margin-top: -2px;"value="12.3"> </div>
+		</div>
+		<div id="right" class="c1">
+			<div class="icon">Down <i class="fas fa-arrow-down"></i></div>
+			<div class="Per"><div class="Per"> <input id="point1" type="text" name=""style="height: 3px; width: 40px;margin-top: -2px;"value="0"></div>
+		</div>
+		<div id="up" class="c1">
+			<div class="icon">Left &ensp;&nbsp;<i class="fas fa-arrow-left"></i></div>
+			<div class="Per"><div class="Per"> <input id="point2" type="text" name=""style="height: 3px; width: 40px;margin-top: 0px;"value="35.21"></div>
+		</div>
+		<div id="down" class="c1">
+			<div class="icon">Right &nbsp;<i class="fas fa-arrow-right"></i></div>
+			<div class="Per"><div class="Per"> <input id="point3" type="text" name=""style="height: 3px; width: 40px;margin-top: 2px;"value="0"></div>
+		</div>
+	</div>	
+</div>
+<script type="text/javascript" src="core.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+ </body>
+</html>

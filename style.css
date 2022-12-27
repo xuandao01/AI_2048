@@ -1,0 +1,146 @@
+.buttonn{
+	border-radius: 10px;
+	background-color: #696969;
+	color: white;
+	font-family: cursive;
+}
+#NGame{
+	width: 70px;
+	height: 15px;
+	background-color: darkgray;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	margin-left: 310px;
+	border-radius: 4px;
+}
+#NGame:hover{
+	cursor: pointer;
+	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 1.0);
+}
+#NGame a{
+	user-select: none;
+	font-family: cursive;
+}
+#AI_BOX{
+	float: left;
+	height: 80px;
+	width: 80px;
+	background-color: #8DFF42;
+	margin-left: 150px;
+	margin-right: -250px;
+	margin-top: 50px;
+	border-radius: 10px;
+	display: none;
+
+}
+#AI_BOX a{
+	font-size: 10px;
+	height: 10px;
+	width: 50px;
+	text-align: center;
+	color: #001EFF;
+	user-select: none;
+	margin-left: 7px;
+	font-family: cursive;
+}
+#AI_BOX:hover{
+	box-shadow: 0px 2px 4px 2px rgba(200, 200, 200, 20.0);
+}
+.buttonn:hover{
+	color: #99ABFF;
+	cursor: pointer;
+}
+#AI_Arrow{
+	height: 60px;
+	width: 80px;
+
+}
+#AI_Arrow img{
+	margin-left: 20px;
+	margin-top: 0px;
+}
+#AI_Arrow a{
+	font-size: 7px;
+	margin-top: -10px;
+}
+#Pause{
+	display: none;
+}
+#Close{
+	display: none;
+}
+#canvas{
+	margin-left: 250px;
+}
+h2{
+	margin-left: 295px;
+}
+#AI_Help{
+	margin-left: 260px;
+}
+#Over{
+	position: fixed;
+	margin-top: -199px;
+	margin-left: 304px;
+	border: solid #C1FFC9 1px;
+	border-radius: 8px;
+	padding: 2px;
+	background-color: #AEF7DC;
+	box-shadow: 0px 2px 6px 0px rgba(190,190,190,190);
+	animation-name: name;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	display: none;
+	color: #6337FF;
+ 	}
+ @keyframes name{
+ 	from {box-shadow: 0px 2px 6px 0px rgba(190,190,190,190);}
+ 	to {box-shadow: 0px 3px 8px 0px rgba(190,190,190,190);}
+ }
+#Des input{
+	padding: 5px;
+	background-color:;
+	margin: 1px	;
+	margin-top: 5px;
+	font-size: 12px;
+	user-select: none;
+	border-radius: 8px;
+	font-family: cursive;
+}
+#percent{
+	height: 90px;
+	width: inherit;
+	background-color: #FFFFFF;
+	margin-top: 5px;
+	font-size: 12px;
+}
+.c1{
+	height: 17px;
+	width: inherit;
+	margin-top: 2px;
+}
+.icon{
+	height: 17px;
+	width: 60px;
+	float: left;
+}
+.Per{
+	height: 17px;
+	width: 70px;
+	float: right;
+}
+#Goal{
+	height: 200px;
+	width: 200px;
+	display: none;
+	background-color: #F0F0F0;
+}
+#Goal input{
+	margin-bottom: 5px;
+	border-radius: 10px;
+	width: 23px;
+	height: 23px;
+	text-align: center;
+	font-size: 10px;
+}
